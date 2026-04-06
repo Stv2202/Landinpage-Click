@@ -101,18 +101,42 @@ function initActiveLink() {
   sections.forEach(section => observer.observe(section));
 }
 
-document.querySelectorAll('.work-item').forEach(item => {
-  const video = item.querySelector('video');
+// ---- Video hover: play/pause (desktop) + autoplay muted (móvil) ----
+function initVideoHover() {
+  const isMobile = window.matchMedia('(hover: none)').matches;
 
-  item.addEventListener('click', () => {
-    if (video.paused) {
-      video.muted = false;
-      video.play();
+  document.querySelectorAll('.work-item').forEach(item => {
+    const video = item.querySelector('video');
+    if (!video) return;
+
+    if (isMobile) {
+      // En móvil: autoplay silencioso para que se vea algo
+      video.muted    = true;
+      video.loop     = true;
+      video.setAttribute('playsinline', '');
+      video.play().catch(() => {});
+
+      // Tap para alternar play/pause
+      item.addEventListener('click', () => {
+        if (video.paused) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      });
+
     } else {
-      video.pause();
+      // En desktop: play al hover, pause al salir
+      item.addEventListener('mouseenter', () => {
+        video.play().catch(() => {});
+      });
+      item.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+      });
     }
   });
-});
+}
 
 // ---- Init ----
 document.addEventListener('DOMContentLoaded', () => {

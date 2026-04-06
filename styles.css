@@ -313,12 +313,12 @@ h1, h2, h3, h4, .logo, .btn, nav, .section-label {
   background: var(--card-bg);
   border: 1px solid var(--border);
   flex-shrink: 0;
-  width: 120px;
-  height: 155px;
+  width: 200px;
+  height: 260px;
 }
 .photo-card.pc-2,
 .photo-card.pc-3,
-.photo-card.pc-5 { height: 185px; align-self: flex-end; }
+.photo-card.pc-5 { height: 310px; align-self: flex-end; }
 .photo-placeholder {
   width: 100%;
   height: 100%;
