@@ -111,8 +111,6 @@ function initVideoHover() {
 
     if (isMobile) {
       // En móvil: autoplay silencioso para que se vea algo
-      video.muted    = true;
-      video.loop     = true;
       video.setAttribute('playsinline', '');
       video.play().catch(() => {});
 
