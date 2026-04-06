@@ -509,34 +509,8 @@ h1, h2, h3, h4, .logo, .btn, nav, .section-label {
   opacity: 1;
 }
 
-/* Botón play centrado */
-.play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.75);
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1.5px solid rgba(255, 255, 255, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  color: #fff;
-  opacity: 0;
-  transition: all 0.3s ease;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.work-item:hover .play-btn {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
+/* Play btn oculto — videos corren en autoplay */
+.play-btn { display: none; }
 
 .work-note {
   margin-top: 1.2rem;
