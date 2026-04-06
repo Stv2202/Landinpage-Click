@@ -101,22 +101,18 @@ function initActiveLink() {
   sections.forEach(section => observer.observe(section));
 }
 
-// ---- Video hover: play/pause ----
-function initVideoHover() {
-  document.querySelectorAll('.work-item').forEach(item => {
-    const video = item.querySelector('video');
-    if (!video) return;
+document.querySelectorAll('.work-item').forEach(item => {
+  const video = item.querySelector('video');
 
-    item.addEventListener('mouseenter', () => {
-      video.play().catch(() => {});
-    });
-
-    item.addEventListener('mouseleave', () => {
+  item.addEventListener('click', () => {
+    if (video.paused) {
+      video.muted = false;
+      video.play();
+    } else {
       video.pause();
-      video.currentTime = 0;
-    });
+    }
   });
-}
+});
 
 // ---- Init ----
 document.addEventListener('DOMContentLoaded', () => {
