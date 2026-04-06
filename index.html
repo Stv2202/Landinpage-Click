@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Click — Agencia de Marketing Digital</title>
+  <meta name="description" content="Click es una agencia creativa y estratégica especializada en comunicación, marketing digital y creación de contenido con propósito." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="logo_click"></div>
+      <ul class="nav-links">
+        <li><a href="#quienes">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#trabajo">Portafolio</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#cta">Contacto</a></li>
+      </ul>
+      <button class="btn-nav js-scroll-cta">Hablemos →</button>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#quienes" class="js-mobile-link">Nosotros</a></li>
+        <li><a href="#servicios" class="js-mobile-link">Servicios</a></li>
+        <li><a href="#trabajo" class="js-mobile-link">Portafolio</a></li>
+        <li><a href="#proceso" class="js-mobile-link">Proceso</a></li>
+        <li><a href="#cta" class="js-mobile-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Agencia de marketing digital
+      </div>
+      <h1 class="hero-title">
+        Diseña el futuro<br>
+        de tu <em>marca</em><span class="acc">.</span>
+      </h1>
+      <p class="hero-sub">
+        Convertimos ideas en estrategias y estrategias en resultados.
+        Hacemos que tu marca haga click con su audiencia.
+      </p>
+      <div class="hero-cta">
+        <a href="#cta" class="btn btn-primary">Empieza ahora</a>
+        <a href="#trabajo" class="btn btn-outline">Ver portafolio</a>
+      </div>
+    </div>
+    <div class="hero-photos" id="heroPhotos">
+      <!-- Reemplaza los src con tus fotos reales -->
+      <img class="photo-card pc-1" src="assets\Karen.jpg" alt="Karen Perfil">
+      <img class="photo-card pc-1" src="assets\Steven.jpg" alt="Steve Perfil">
+      <img class="photo-card pc-1" src="assets\Sara.jpg" alt="Sara Perfil">
+      <img class="photo-card pc-1" src="assets\Karen_espalda.png" alt="Karen Espalda">
+    </div>
+  </section>
+
+  <!-- ===== QUIÉNES SOMOS ===== -->
+  <section id="quienes" class="section section-dark">
+    <div class="container two-col">
+      <div class="col-text reveal">
+        <p class="section-label">¿Quiénes somos?</p>
+        <h2 class="section-title">Agencia creativa<br>con propósito</h2>
+        <p class="section-sub">
+          En Click somos una agencia especializada en comunicación, marketing digital y
+          creación de contenido. Acompañamos a las marcas en la construcción de una
+          presencia sólida, coherente y atractiva en el entorno digital, conectando
+          ideas creativas con objetivos reales de negocio.
+        </p>
+        <p class="section-sub" style="margin-top:1rem;">
+          Trabajamos de la mano con cada cliente, entendiendo su esencia, sus
+          necesidades y su contexto, para transformar mensajes en experiencias
+          que generan valor, posicionamiento y confianza.
+        </p>
+        <div class="highlight-box">
+          En Click, no solo creamos contenido: creamos estrategias que hacen
+          que las marcas se noten, se recuerden y hagan click con su audiencia.
+        </div>
+      </div>
+      <div class="col-graphic reveal reveal-delay">
+        <div class="about-card">
+          <div class="about-stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-desc">Enfoque estratégico y creativo adaptado a cada marca y sector</span>
+          </div>
+          <div class="divider"></div>
+          <div class="about-stat">
+            <span class="stat-num">+50</span>
+            <span class="stat-desc">Marcas acompañadas en su crecimiento digital</span>
+          </div>
+          <div class="divider"></div>
+          <div class="about-stat">
+            <span class="stat-num">360°</span>
+            <span class="stat-desc">Gestión integral de comunicación y marketing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section id="servicios" class="section section-black">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">¿Qué hacemos?</p>
+        <h2 class="section-title">Soluciones que generan<br>impacto real</h2>
+        <p class="section-sub">
+          Diseñamos y ejecutamos estrategias integrales que fortalecen la identidad
+          de marca y convierten ideas en resultados medibles.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🎯</div>
+          <h3>Identidad de marca</h3>
+          <p>Construimos la esencia visual y verbal de tu marca: logotipo, paleta, tono de voz y manual de identidad.</p>
+          <span class="service-arrow">Identidad de marca →</span>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">📱</div>
+          <h3>Estrategia de marca</h3>
+          <p>Definimos el camino más efectivo para posicionar tu marca, comunicar y conectar con tu audiencia ideal.</p>
+          <span class="service-arrow">Estrategia de marca →</span>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🎬</div>
+          <h3>Producción de vídeo</h3>
+          <p>Creamos contenido audiovisual que genera impacto: reels, spots, testimonios y contenido para redes.</p>
+          <span class="service-arrow">Producción de vídeo →</span>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">⚡</div>
+          <h3>Activación de marca</h3>
+          <p>Estrategias y acciones para que tu marca tome vida y genere conexiones reales con su audiencia.</p>
+          <span class="service-arrow">Activación de marca →</span>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🌐</div>
+          <h3>Desarrollo de sitio web</h3>
+          <p>Diseñamos y desarrollamos sitios web modernos, funcionales y optimizados para convertir visitantes en clientes.</p>
+          <span class="service-arrow">Desarrollo de sitio web →</span>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">📊</div>
+          <h3>Marketing integrado</h3>
+          <p>Gestionamos campañas y acciones de marketing 360° que alinean todos los canales hacia un mismo objetivo.</p>
+          <span class="service-arrow">Marketing integrado →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NUESTRO TRABAJO ===== -->
+  <section id="trabajo" class="section section-dark">
+    <div class="container">
+      <div class="work-title-row reveal">
+        <div>
+          <p class="section-label">Portafolio</p>
+          <h2 class="section-title">Nuestro trabajo</h2>
+        </div>
+        <a href="#cta" class="btn btn-outline">Ver todo →</a>
+      </div>
+      <div class="work-grid">
+        <!-- Reemplaza photo-placeholder por <img src="tu-imagen.jpg" alt=""> -->
+        <div class="work-item work-tall reveal"><div class="photo-placeholder">◈</div></div>
+        <div class="work-item reveal reveal-delay"><div class="photo-placeholder">✦</div></div>
+        <div class="work-item reveal reveal-delay"><div class="photo-placeholder">◉</div></div>
+        <div class="work-item reveal"><div class="photo-placeholder">⬡</div></div>
+        <div class="work-item reveal"><div class="photo-placeholder">✦</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CÓMO TRABAJAMOS ===== -->
+  <section id="proceso" class="section section-black">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">¿Cómo trabajamos?</p>
+        <h2 class="section-title">Un proceso diseñado<br>para resultados</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>Análisis</h3>
+          <p>Conocemos la marca, el mercado y los objetivos del negocio en profundidad.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <h3>Estrategia</h3>
+          <p>Definimos el camino más efectivo para comunicar, posicionar y vender.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <h3>Creatividad</h3>
+          <p>Creamos contenido alineado a la identidad de marca y al público objetivo.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">04</div>
+          <h3>Ejecución</h3>
+          <p>Publicamos, gestionamos y optimizamos cada pieza y campaña.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">05</div>
+          <h3>Medición</h3>
+          <p>Analizamos resultados y ajustamos para mejorar constantemente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POR QUÉ ELEGIRNOS ===== -->
+  <section id="porquenosotros" class="section section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">¿Por qué elegirnos?</p>
+        <h2 class="section-title">Lo que nos hace diferentes</h2>
+        <p class="section-sub">En Click entendemos que cada marca es diferente, por eso creamos soluciones personalizadas que generan valor y crecimiento.</p>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason reveal">
+          <div class="reason-check">✓</div>
+          <div>
+            <h4>Enfoque estratégico y creativo</h4>
+            <p>No improvisamos. Cada acción tiene un propósito claro y medible.</p>
+          </div>
+        </div>
+        <div class="reason reveal">
+          <div class="reason-check">✓</div>
+          <div>
+            <h4>Contenido alineado a objetivos reales</h4>
+            <p>Creamos contenido que no solo se ve bien, sino que genera resultados.</p>
+          </div>
+        </div>
+        <div class="reason reveal">
+          <div class="reason-check">✓</div>
+          <div>
+            <h4>Comunicación clara y cercana</h4>
+            <p>Trabajamos de la mano con cada cliente, siempre disponibles.</p>
+          </div>
+        </div>
+        <div class="reason reveal">
+          <div class="reason-check">✓</div>
+          <div>
+            <h4>Adaptación a cada marca y sector</h4>
+            <p>Entendemos tu esencia, contexto y audiencia antes de crear.</p>
+          </div>
+        </div>
+        <div class="reason reveal">
+          <div class="reason-check">✓</div>
+          <div>
+            <h4>Resultados medibles</h4>
+            <p>Optimización constante basada en datos reales y métricas de impacto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section id="cta" class="section section-cta">
+    <div class="container cta-inner reveal">
+      <p class="section-label">¿Ya estás listo?</p>
+      <h2 class="section-title cta-title">
+        Hagamos que tu marca<br>haga <em>click</em> con su audiencia
+      </h2>
+      <p class="section-sub cta-sub">
+        En Click convertimos ideas en estrategias y estrategias en resultados.
+        Cuéntanos sobre tu marca.
+      </p>
+      <div class="cta-btn-group">
+        <!-- Actualiza el email y el número de WhatsApp -->
+        <a href="clickagencia25@gmail.com" class="btn btn-primary">Escríbenos ahora →</a>
+        <a href="https://wa.me/573027872982" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="services-tags">
+        <span class="tag">Identidad de marca →</span>
+        <span class="tag">Producción de vídeo →</span>
+        <span class="tag">Activación de marca →</span>
+        <span class="tag">Desarrollo de sitio web →</span>
+        <span class="tag">Estrategia de marca →</span>
+        <span class="tag">Marketing integrado →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="logo_click"></div>
+      <p class="footer-copy">© 2025 Click Agencia. Todos los derechos reservados.</p>
+      <p class="footer-tagline">Garantizamos resultados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
