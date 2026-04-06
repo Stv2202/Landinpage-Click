@@ -101,9 +101,27 @@ function initActiveLink() {
   sections.forEach(section => observer.observe(section));
 }
 
+// ---- Video hover: play/pause ----
+function initVideoHover() {
+  document.querySelectorAll('.work-item').forEach(item => {
+    const video = item.querySelector('video');
+    if (!video) return;
+
+    item.addEventListener('mouseenter', () => {
+      video.play().catch(() => {});
+    });
+
+    item.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+}
+
 // ---- Init ----
 document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initSmoothScroll();
   initActiveLink();
+  initVideoHover();
 });
